@@ -14,11 +14,12 @@ public class abeille : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnCollisionEnter2D(Collision2D col)
     {
-        if (other.gameObject.tag == "Green")
+        Debug.Log("OnCollisionEnter2D");
+        if (col.gameObject.tag == "Green")
         { //Si le game object qui est rencontré par l'objet est vert alors affiché
-            Debug.Log("Collision with a Forêt");
+            Debug.Log("Collision with a Green");
         }
     }
     }
